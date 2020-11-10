@@ -60,6 +60,10 @@
     <Compile Include="Migrations\202011102246268_Add_Fluent_Api.designer.cs">
       <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.cs" />
+    <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.designer.cs">
+      <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FurnitureType.cs" />
     <Compile Include="Models\WoodFurnitureOrder.cs" />
@@ -76,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011102246268_Add_Fluent_Api.resx">
       <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011102257397_Set_String_Fields_Length.resx">
+      <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
