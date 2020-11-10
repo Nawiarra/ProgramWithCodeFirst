@@ -56,6 +56,10 @@
     <Compile Include="Migrations\202011102218033_Initial_Create.designer.cs">
       <DependentUpon>202011102218033_Initial_Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011102246268_Add_Fluent_Api.cs" />
+    <Compile Include="Migrations\202011102246268_Add_Fluent_Api.designer.cs">
+      <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FurnitureType.cs" />
     <Compile Include="Models\WoodFurnitureOrder.cs" />
@@ -69,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011102218033_Initial_Create.resx">
       <DependentUpon>202011102218033_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011102246268_Add_Fluent_Api.resx">
+      <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
