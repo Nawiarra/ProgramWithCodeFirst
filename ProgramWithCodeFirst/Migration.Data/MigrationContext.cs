@@ -10,7 +10,7 @@ namespace Migration.Data
 {
     public class MigrationContext : DbContext
     {
-        public MigrationContext() : base("Data Source =(LocalDB)\\MSSQLLocalDB;Initial Catalog = MultiLayerExampleDB;Integrated Security=true")
+        public MigrationContext() : base("Data Source =(LocalDB)\\MSSQLLocalDB;Initial Catalog = ProgramWithCodeFirstDB;Integrated Security=true")
         {
 
         }
