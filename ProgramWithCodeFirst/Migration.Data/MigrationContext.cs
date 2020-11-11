@@ -10,7 +10,7 @@ namespace WoodWorkshop.Data
 {
     public class MigrationContext : DbContext
     {
-        public MigrationContext() : base("Data Source =.;Initial Catalog = ProgramWithCodeFirstDB4;Integrated Security=true")
+        public MigrationContext() : base("Data Source =(LocalDB)\\MSSQLLocalDB;Initial Catalog = ProgramWithCodeF4rstDB;Integrated Security=true")
         {
 
         }
@@ -29,7 +29,7 @@ namespace WoodWorkshop.Data
 
             modelBuilder.Entity<WoodFurnitureOrder>()
                 .ToTable("WoodFurnitureOrders")
-                .HasKey(x=>x.Id);
+                .HasKey(x => x.Id);
 
             modelBuilder.Entity<WoodFurnitureOrder>()
                 .Property(x => x.Color)
@@ -125,19 +125,18 @@ namespace WoodWorkshop.Data
              .WithRequired(x => x.Epoxy)
              .HasForeignKey(x => x.EpoxyId);
 
-            modelBuilder.Entity<Epoxy>()
-                .Property(x => x.Type)
+            modelBuilder.Entity<WoodFurnitureOrder>()
+                .Property(x => x.Color)
                 .IsRequired()
-                .HasMaxLength(30);
+                .HasMaxLength(20);
 
-            modelBuilder.Entity<Epoxy>()
-                .Property(x => x.Price)
+            modelBuilder.Entity<WoodFurnitureOrder>()
+                .Property(x => x.Date)
                 .IsRequired()
-                .HasMaxLength(10);
+                .HasMaxLength(20);
 
 
             #endregion
-
         }
-    }
+    };
 }

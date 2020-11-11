@@ -1,4 +1,4 @@
-﻿namespace я.Data.Migrations
+﻿namespace Migration.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

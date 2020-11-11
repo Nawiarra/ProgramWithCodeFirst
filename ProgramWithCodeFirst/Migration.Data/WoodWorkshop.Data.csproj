@@ -88,6 +88,13 @@
       <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Migrations\202011111553596_Create_Test_Migration.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Migrations\202011111553596_Create_Test_Migration.designer.cs">
+      <DependentUpon>202011111553596_Create_Test_Migration.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Epoxy.cs" />
@@ -124,6 +131,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.resx">
       <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011111553596_Create_Test_Migration.resx">
+      <DependentUpon>202011111553596_Create_Test_Migration.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
