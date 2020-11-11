@@ -64,7 +64,12 @@
     <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.designer.cs">
       <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs" />
+    <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.designer.cs">
+      <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\FurnitureType.cs" />
     <Compile Include="Models\WoodFurnitureOrder.cs" />
     <Compile Include="Models\WoodType.cs" />
@@ -83,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011102257397_Set_String_Fields_Length.resx">
       <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.resx">
+      <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

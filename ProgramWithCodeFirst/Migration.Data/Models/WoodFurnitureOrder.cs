@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 
-namespace WoodWorkshop.Data.Models
+namespace Migration.Data.Models
 {
     public class WoodFurnitureOrder
     {
         [Key]
         public int Id { get; set; }
-        public string PhoneNumber { get; set; }
-        public string FullName { get; set; }
+        public int CustomerId { get; set; }
         public string Date { get; set; }
         public int FurnitureTypeId { get; set; }
         public string Color { get; set; }
@@ -20,5 +19,6 @@ namespace WoodWorkshop.Data.Models
 
         public virtual FurnitureType FurnitureType { get; set; }
         public virtual WoodType WoodType { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }

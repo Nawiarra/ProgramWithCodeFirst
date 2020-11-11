@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WoodWorkshop.Data.Models
+namespace Migration.Data.Models
 {
     public class WoodType
     {
@@ -12,6 +12,6 @@ namespace WoodWorkshop.Data.Models
         public string TypeName { get; set; }
         public float BoardThickness { get; set; }
         public string Price { get; set; }
-        public virtual ICollection<WoodFurnitureOrder> WoodFurnitureOrders { get; set; }
+        public virtual ICollection <WoodFurnitureOrder> WoodFurnitureOrders { get; set; }
     }
 }

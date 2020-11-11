@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoodWorkshop.Data.Models;
+using Migration.Data.Models;
 
 namespace Migration.Data
 {
@@ -14,7 +14,6 @@ namespace Migration.Data
         {
 
         }
-
 
         public DbSet<WoodFurnitureOrder> WoodFurnitureOrders { get; set; }
         public DbSet<FurnitureType> FurnitureTypes { get; set; }
@@ -29,16 +28,6 @@ namespace Migration.Data
             modelBuilder.Entity<WoodFurnitureOrder>()
                 .ToTable("WoodFurnitureOrders")
                 .HasKey(x=>x.Id);
-
-            modelBuilder.Entity<WoodFurnitureOrder>()
-                .Property(x => x.FullName)
-                .IsRequired()
-                .HasMaxLength(50);
-
-            modelBuilder.Entity<WoodFurnitureOrder>()
-                .Property(x => x.PhoneNumber)
-                .IsRequired()
-                .HasMaxLength(15);
 
             modelBuilder.Entity<WoodFurnitureOrder>()
                 .Property(x => x.Color)
@@ -97,6 +86,29 @@ namespace Migration.Data
                 .IsRequired()
                 .HasMaxLength(15);
 
+
+            #endregion
+
+            #region WoodType
+
+            modelBuilder.Entity<Customer>()
+               .ToTable("Customers")
+               .HasKey(x => x.Id);
+
+            modelBuilder.Entity<Customer>()
+               .HasMany(x => x.WoodFurnitureOrders)
+               .WithRequired(x => x.Customer)
+               .HasForeignKey(x => x.CustomerId);
+
+            modelBuilder.Entity<Customer>()
+                .Property(x => x.FullName)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<Customer>()
+                .Property(x => x.PhoneNumber)
+                .IsRequired()
+                .HasMaxLength(15);
 
             #endregion
 
