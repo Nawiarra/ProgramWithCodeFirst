@@ -10,7 +10,7 @@ namespace WoodWorkshop.Data
 {
     public class MigrationContext : DbContext
     {
-        public MigrationContext() : base("Data Source =.;Initial Catalog = ProgramWithCodeFirstDB;Integrated Security=true")
+        public MigrationContext() : base("Data Source = (LocalDB)\\MSSQLLocalDB;Initial Catalog = ProgramWithCodeFirstDB4;Integrated Security=true")
         {
 
         }

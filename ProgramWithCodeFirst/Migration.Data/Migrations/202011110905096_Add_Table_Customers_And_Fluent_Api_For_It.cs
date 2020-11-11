@@ -1,4 +1,4 @@
-﻿namespace WoodWorkshop.Data.Migrations
+﻿namespace я.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

@@ -53,25 +53,40 @@
   <ItemGroup>
     <Compile Include="Interfaces\IWoodWorkshopRepository.cs" />
     <Compile Include="MigrationContext.cs" />
-    <Compile Include="Migrations\202011102218033_Initial_Create.cs" />
+    <Compile Include="Migrations\202011102218033_Initial_Create.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\202011102218033_Initial_Create.designer.cs">
       <DependentUpon>202011102218033_Initial_Create.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Migrations\202011102246268_Add_Fluent_Api.cs" />
+    <Compile Include="Migrations\202011102246268_Add_Fluent_Api.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\202011102246268_Add_Fluent_Api.designer.cs">
       <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.cs" />
+    <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\202011102257397_Set_String_Fields_Length.designer.cs">
       <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs" />
+    <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.designer.cs">
       <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs" />
+    <Compile Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.designer.cs">
       <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -93,18 +108,23 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011102218033_Initial_Create.resx">
       <DependentUpon>202011102218033_Initial_Create.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011102246268_Add_Fluent_Api.resx">
       <DependentUpon>202011102246268_Add_Fluent_Api.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011102257397_Set_String_Fields_Length.resx">
       <DependentUpon>202011102257397_Set_String_Fields_Length.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.resx">
       <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.resx">
       <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
