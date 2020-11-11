@@ -18,6 +18,7 @@ namespace WoodWorkshop.Data
         public DbSet<WoodFurnitureOrder> WoodFurnitureOrders { get; set; }
         public DbSet<FurnitureType> FurnitureTypes { get; set; }
         public DbSet<WoodType> WoodTypes { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
