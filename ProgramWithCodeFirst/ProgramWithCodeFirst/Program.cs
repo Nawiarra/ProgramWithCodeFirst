@@ -16,7 +16,7 @@ namespace ProgramWithCodeFirst
             var controllerFurnitureType = new FurnitureTypeController();
             var controllerWoodType = new WoodTypeController();
             var controllerCustomer = new CustomerController();
-
+            var controllerEpoxy = new EpoxyController();
 
             var furnitureType = new FurnitureTypePostModel
             {
@@ -65,6 +65,21 @@ namespace ProgramWithCodeFirst
                 Console.WriteLine(ex.Message);
             }
 
+            var epoxy = new EpoxyPostModel
+            {
+                Type = "Jewelry",
+                Price = "80"
+            };
+
+            try
+            {
+                controllerEpoxy.CreateWoodFurnitureRequest(epoxy);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             var modelWoodFurnitureOrder = new CreateWoodFurnitureOrderPostModel
             {
                 Date = DateTime.UtcNow.ToString("dd.MM.yyyy"),
@@ -73,11 +88,10 @@ namespace ProgramWithCodeFirst
                 WoodTypeId = 3,
                 FurnitureType = furnitureType,
                 WoodType = woodType,
-                Customer = customer
+                Customer = customer,
+                Epoxy = epoxy
 
             };
-
-
 
             controllerWoodFurnitureOrder.CreateWoodFurnitureRequest(modelWoodFurnitureOrder);
 

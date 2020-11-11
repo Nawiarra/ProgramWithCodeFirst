@@ -15,10 +15,11 @@ namespace WoodWorkshop.Domain.Models
         public int FurnitureTypeId { get; set; }
         public string Color { get; set; }
         public int WoodTypeId { get; set; }
-
+        public int EpoxyId { get; set; }
         public virtual FurnitureTypeModel FurnitureType { get; set; }
         public virtual WoodTypeModel WoodType { get; set; }
         public virtual CustomerModel Customer { get; set; }
+        public virtual EpoxyModel Epoxy { get; set; }
 
     }
 }

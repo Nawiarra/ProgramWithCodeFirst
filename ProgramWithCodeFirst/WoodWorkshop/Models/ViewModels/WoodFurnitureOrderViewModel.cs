@@ -15,9 +15,11 @@ namespace WoodWorkshop.Models.ViewModels
         public int FurnitureTypeId { get; set; }
         public string Color { get; set; }
         public int WoodTypeId { get; set; }
+        public int EpoxyId { get; set; }
 
         public virtual FurnitureTypeViewModel FurnitureType { get; set; }
         public virtual WoodTypeViewModel WoodType { get; set; }
         public virtual CustomerViewModel Customer { get; set; }
+        public virtual EpoxyViewModel Epoxy { get; set; }
     }
 }

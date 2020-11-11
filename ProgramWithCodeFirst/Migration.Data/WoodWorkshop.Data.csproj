@@ -69,13 +69,19 @@
     <Compile Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.designer.cs">
       <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs" />
+    <Compile Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.designer.cs">
+      <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Epoxy.cs" />
     <Compile Include="Models\FurnitureType.cs" />
     <Compile Include="Models\WoodFurnitureOrder.cs" />
     <Compile Include="Models\WoodType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\EpoxyRepository.cs" />
     <Compile Include="Repositories\FurnitureTypeRepository.cs" />
     <Compile Include="Repositories\WoodTypeRepository.cs" />
     <Compile Include="Repositories\WoodWorkshopRepository.cs" />
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.resx">
       <DependentUpon>202011110905096_Add_Table_Customers_And_Fluent_Api_For_It.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.resx">
+      <DependentUpon>202011111304116_Add_Table_Epoxys_And_Fluent_Api_For_It.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,6 +19,7 @@ namespace WoodWorkshop.Data
         public DbSet<FurnitureType> FurnitureTypes { get; set; }
         public DbSet<WoodType> WoodTypes { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Epoxy> Epoxys { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -110,6 +111,30 @@ namespace WoodWorkshop.Data
                 .Property(x => x.PhoneNumber)
                 .IsRequired()
                 .HasMaxLength(15);
+
+            #endregion
+
+            #region Epoxy
+
+            modelBuilder.Entity<Epoxy>()
+                .ToTable("Epoxys")
+                .HasKey(x => x.Id);
+
+            modelBuilder.Entity<Epoxy>()
+             .HasMany(x => x.WoodFurnitureOrders)
+             .WithRequired(x => x.Epoxy)
+             .HasForeignKey(x => x.EpoxyId);
+
+            modelBuilder.Entity<Epoxy>()
+                .Property(x => x.Type)
+                .IsRequired()
+                .HasMaxLength(30);
+
+            modelBuilder.Entity<Epoxy>()
+                .Property(x => x.Price)
+                .IsRequired()
+                .HasMaxLength(10);
+
 
             #endregion
 

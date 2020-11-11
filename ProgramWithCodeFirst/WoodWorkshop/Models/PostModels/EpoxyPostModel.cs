@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace WoodWorkshop.Models.PostModels
 {
-    public class CustomerPostModel
+    public class EpoxyPostModel
     {
-        public string PhoneNumber { get; set; }
-        public string FullName { get; set; }
+        public string Type { get; set; }
+        public string Price { get; set; }
         public virtual ICollection<CreateWoodFurnitureOrderPostModel> WoodFurnitureOrders { get; set; }
     }
 }

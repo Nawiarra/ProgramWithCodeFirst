@@ -28,6 +28,8 @@ namespace WoodWorkshop.Controllers
                 cfg.CreateMap<WoodTypeViewModel, WoodTypeModel>().ReverseMap();
                 cfg.CreateMap<CustomerPostModel, CustomerModel>().ReverseMap();
                 cfg.CreateMap<CustomerViewModel, CustomerModel>().ReverseMap();
+                cfg.CreateMap<EpoxyPostModel, EpoxyModel>().ReverseMap();
+                cfg.CreateMap<EpoxyViewModel, EpoxyModel>().ReverseMap();
 
             });
 

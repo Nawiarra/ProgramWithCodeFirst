@@ -32,6 +32,7 @@ namespace WoodWorkshop.Domain
                 cfg.CreateMap<FurnitureTypeModel, FurnitureType>().ReverseMap();
                 cfg.CreateMap<WoodTypeModel, WoodType>().ReverseMap();
                 cfg.CreateMap<CustomerModel, Customer>().ReverseMap();
+                cfg.CreateMap<EpoxyModel, Epoxy>().ReverseMap();
             });
 
             _mapper = new Mapper(mapperConfig);
