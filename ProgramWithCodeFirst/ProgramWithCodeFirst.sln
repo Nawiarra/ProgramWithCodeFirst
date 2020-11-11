@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramWithCodeFirst", "ProgramWithCodeFirst\ProgramWithCodeFirst.csproj", "{18448AB8-7F41-4EBF-A7D9-91BD8CBEB678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migration.Data", "Migration.Data\Migration.Data.csproj", "{F7D43829-D846-42DE-A37A-B1F3FD5B1A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoodWorkshop.Data", "Migration.Data\WoodWorkshop.Data.csproj", "{F7D43829-D846-42DE-A37A-B1F3FD5B1A72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

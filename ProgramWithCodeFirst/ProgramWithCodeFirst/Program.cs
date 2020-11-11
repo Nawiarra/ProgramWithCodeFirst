@@ -10,6 +10,7 @@ namespace ProgramWithCodeFirst
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

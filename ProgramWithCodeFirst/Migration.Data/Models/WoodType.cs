@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Migration.Data.Models
+namespace WoodWorkshop.Data.Models
 {
     public class WoodType
     {

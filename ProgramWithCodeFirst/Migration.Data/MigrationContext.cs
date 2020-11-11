@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Migration.Data.Models;
+using WoodWorkshop.Data.Models;
 
-namespace Migration.Data
+namespace WoodWorkshop.Data
 {
     public class MigrationContext : DbContext
     {
@@ -89,7 +89,7 @@ namespace Migration.Data
 
             #endregion
 
-            #region WoodType
+            #region Customer
 
             modelBuilder.Entity<Customer>()
                .ToTable("Customers")
