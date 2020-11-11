@@ -13,7 +13,7 @@ namespace WoodWorkshop.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202011111553596_Create_Test_Migration"; }
+            get { return "202011111646264_Create_Test_Migration"; }
         }
         
         string IMigrationMetadata.Source

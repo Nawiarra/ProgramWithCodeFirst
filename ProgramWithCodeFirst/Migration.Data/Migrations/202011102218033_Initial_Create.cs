@@ -1,4 +1,4 @@
-﻿namespace Migration.Data.Migrations
+﻿namespace WoodWorkshop.Data.Migrations
 {
     using System;
     
